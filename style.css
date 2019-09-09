@@ -1,0 +1,509 @@
+/* Theme Name: HIKO thema
+Theme URI: http://wordpress.org/themes/hiko
+Author: hikopro
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0 */
+
+
+/* ヘッダー */
+header{
+  text-align: center;
+}
+.blog-title{
+  padding-top: 30px;
+}
+.blog-title h2>a{
+  padding-top: 30px;
+  color: black;
+}
+.blog-title h2>a:hover{
+  text-decoration: none;
+}
+.nav ul{
+  list-style: none;
+  margin: 20px auto;
+}
+.nav li{
+  display: inline-block;
+  padding: 20px;
+}
+.nav li>ul{
+  border: none;
+}
+.nav li:hover{
+  background: rgba(194, 200, 196, 0.7);
+}
+.menu-header-container{
+  margin: 0 auto;
+}
+.menu-header-container ul{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-left: 0;
+}
+#menu-header a{
+  color: black;
+}
+#menu-header a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+/* 記事一覧 */
+.toukou{
+  border: 1px solid rgba(141, 147, 149, 0.64);
+  margin: 0px 0 20px;
+}
+.image{
+  padding: 0;
+  position: relative;
+}
+.image img{
+  width: 100%;
+  height: auto;
+}
+.toukou li{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 1px solid black;
+  padding: 5px 20px;
+  background: rgba(195, 201, 200, 0.44);
+
+}
+.toukou li>a{
+  color: black;
+}
+.toukou li>a:hover{
+  color: black;
+  text-decoration: none;
+}
+.post-des{
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+.post-des span{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.toukou ul{
+  list-style: none;
+}
+.post {
+    position: relative;
+    z-index: 1; /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+.damy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+.damy:hover{
+  background: rgba(58, 59, 58, 0.34);
+}
+
+/* パージネイション */
+.pagenations{
+  margin: 40px 0;
+  text-align: center;
+}
+.pagenations ul{
+  list-style: none;
+}
+.pagenations li{
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+.pagenations span,.page-numbers{
+  border: 1px solid black;
+  padding: 7px 10px;
+  margin: 4px;
+}
+.page-numbers{
+  color: black;
+}
+.current{
+  background-color: black;
+  color: white;
+}
+.page-numbers:hover{
+  color: white;
+  background: black;
+  text-decoration: none;
+}
+/* サイドバー */
+
+.sidebar{
+  border: 1px solid rgba(159, 157, 161, 0.51);
+  margin: 0px 0 30px;
+}
+.sidebar a{
+  color: black;
+}
+.sidebar a:hover{
+  text-decoration: none;
+  color: rgb(219, 69, 30);
+}
+.sidebar h2{
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 15px;
+  padding: 15px;
+}
+/* 検索 */
+.screen-reader-text{
+  display: none;
+}
+.search-form{
+  padding: 20px;
+}
+.search-field{
+  border: 1px solid rgba(174, 181, 180, 0.31);
+  padding: 6px 20px;
+}
+.search-submit{
+    padding: 6px 20px;
+    background: rgba(175, 230, 164, 0.65);
+    border: none;
+}
+
+
+/* 最近の投稿 */
+.rpwwt-widget li{
+  padding: 5px 0px 0 10px;
+  margin: 0;
+}
+
+.rpwwt-post-excerpt{
+  font-size: 13px;
+}
+/* フッター */
+footer{
+  background: rgba(157, 154, 155, 0.68);
+}
+.copy{
+  text-align: center;
+  border-top: 1px solid rgba(86, 82, 88, 0.63);
+  padding-top: 20px;
+  margin-top: 0px;
+  padding-bottom: 20px;
+}
+.copy P{
+  margin-bottom: 0;
+  color: rgba(213, 219, 207, 0.7);
+}
+.menu-footer-container ul{
+  list-style: none;
+  padding-left: 0;
+}
+.menu-footer-container li{
+  display: inline-block;
+  border: 1px solid black;
+  text-align: center;
+  width: 200px;
+  height: 30px;
+  margin: 20px 10px 0;
+}
+.menu-footer-container a{
+  color: black;
+}
+.menu-footer-container a:hover{
+  color: black;
+  text-decoration: none;
+}
+.menu-footer-container li:hover{
+  background:rgba(224, 233, 231, 0.59);
+}
+/* シングル */
+.single{
+  margin: 0px 0 20px;
+  border-top: 3px solid black;
+}
+.single h2{
+  padding-left: 30px;
+  margin: 20px 0 30px;
+
+}
+.imagesin img{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.imagesin li{
+  position: absolute;
+  top:170px;
+  z-index: 1;
+  border: 1px solid black;
+  padding: 5px 20px;
+  background: rgba(195, 201, 200, 0.44);
+}
+.imagesin ul{
+  list-style: none;
+}
+.imagesin li>a{
+  color: black;
+}
+.imagesin li>a:hover{
+  color: black;
+  text-decoration: none;
+}
+.imagesin p{
+  text-align: right;
+  color: rgba(80, 81, 83, 0.71);
+}
+
+/* ページ */
+.pagewrap{
+  border-top: 3px solid black;
+  padding-top: 30px;
+}
+.page-content {
+  margin: 0 auto;
+  width: 100%;
+}
+.page-title{
+  text-align: center;
+}
+.wpcf7-form label{
+ width: 100%;
+}
+.wpcf7-form textarea{
+  height: 100px;
+  margin: 0 auto;
+}
+.wpcf7-form{
+  text-align: center;
+}
+
+.wpcf7-submit{
+  background: rgb(139, 223, 118);
+  width: 80px;
+  border-radius: 5px;
+}
+.comment-form-comment label,textarea{
+  display: block;
+}
+#submit{
+  background: rgba(117, 215, 112, 0.74);
+}
+.searchwrap{
+  border-top: 3px solid black;
+  padding-top: 30px;
+}
+
+/* パンくず */
+.pan li{
+  margin: 0 5px;
+  list-style: none;
+  display: inline-block;
+}
+.pan{
+  padding-left: 30px;
+  margin-top: 20px;
+}
+/* 階層メニュー */
+.sub-menu li{
+  display: block;
+}
+.sub-menu{
+  border: none;
+}
+/* SNS */
+.fa-hatena:before {
+  font-family: Verdana;
+  font-weight: bold;
+  content: 'B!';
+}
+
+.share {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.share ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.share ul:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.share li {
+  float: left;
+  width: 25%;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.share li a {
+  font-size: 14px;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.share li a:hover {
+  opacity: .8;
+}
+
+.share li a:visited {
+  color: #fff;
+}
+
+.tweet a {
+  background-color: #55acee;
+}
+
+.facebook a {
+  background-color: #315096;
+}
+
+.googleplus a {
+  background-color: #dd4b39;
+}
+
+.hatena a {
+  background-color: #008fde;
+}
+
+@media(max-width: 599px) {
+  .share li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 3px;
+  }
+  .share li i {
+    font-size: 1.3em;
+    padding-top: 3px;
+  }
+  .share li span {
+    display: none;
+  }
+}
+
+/* 前後の記事 */
+/* PREV NEXT
+---------------------------------*/
+#prev_next{
+width:100%;
+margin: 36px 0 24px;
+padding:0;
+display: table;
+}
+#prev_next  #prev, #prev_next  #next{
+width: 50%;
+padding:30px 10px 10px;
+border-top:#ccc 1px solid;
+border-bottom:#ccc 1px solid;
+display: table-cell;
+position:relative;
+text-decoration:none;
+}
+#prev_next #prev p, #prev_next #next p{
+font-size:90%;
+line-height:1.5;
+}
+#prev_next #prev:hover, #prev_next #next:hover{
+background-color: rgba(238,238,238,0.7);
+}
+#prev_next #prev{
+border-right:#ccc 1px solid;
+}
+#prev_next #prev_title, #prev_next #next_title{
+font-size:90%;
+top:-1em;
+position:absolute;
+border: 1px #ccc solid;
+background:#fff;
+text-align: center;
+padding:3px;
+color:#666;
+}
+#prev_next #next_title{
+right:10px;
+}
+#prev_next #prev img, #prev_next #next img{
+margin:0 auto;
+}
+#prev_next #prev_no, #prev_next #next_no{
+width: 50%;
+height:140px;
+padding:0 10px;
+display: table-cell;
+}
+#prev_next #prev_no{
+border-right:#ccc 1px solid;
+}
+#prev_next_home{
+margin:0 auto;
+
+;
+width: 100px;
+height:100px;
+-moz-border-radius: 100px;
+-webkit-border-radius: 100px;
+border-radius: 100px;
+
+text-align:center;
+}
+
+#prev_next_home i{
+color:#FFF;
+margin:10px auto ;
+font-size:60px;
+}
+/*-- ここまで --*/
+/*media Queries タブレットサイズ
+----------------------------------------------------*/
+@media only screen and (max-width: 780px) {
+}
+/*media Queries タブレットサイズ
+----------------------------------------------------*/
+@media only screen and (min-width: 380px) {
+}
+/*media Queries PCサイズ
+----------------------------------------------------*/
+@media only screen and (min-width: 780px) {
+/*-- ここから --*/
+/*--------------------------------------
+768px PREV NEXT
+--------------------------------------*/
+#prev_next #prev, #prev_next #prev::before, #prev_next #prev::after,
+#prev_next #next, #prev_next #next::before, #prev_next #next::after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: all .3s;
+transition: all .3s;
+}
+#prev_next #prev_title, #prev_next #next_title{
+padding:3px 10px;
+}
+#prev_next #next_title{
+right:10px;
+}
+#prev_next #prev img{
+float:left;
+margin-right:10px
+}
+#prev_next #next img{
+float:right;
+margin-left: 10px;
+}
+/*-- ここまで --*/
+}
